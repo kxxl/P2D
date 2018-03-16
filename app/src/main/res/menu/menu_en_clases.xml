@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MisClases" >
+
+
+    <item
+        android:id="@+id/explorar"
+        android:title="Buscar Nueva Clase"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/preferencias"
+        android:title="@string/menu_activity_3"
+        android:icon="@android:drawable/ic_menu_view"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        />
+    <item android:id="@+id/perfil"
+        android:title="@string/menu_activity_4"
+        android:icon="@drawable/ic_profile"
+        android:orderInCategory="4"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/informacion"
+        android:title="@string/menu_activity_5"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="never"
+        android:orderInCategory="5"
+        />
+
+
+</menu>

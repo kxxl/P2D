@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:minHeight="?attr/actionBarSize"
+    tools:ignore="UnusedAttribute">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/logoToolbar"
+            android:layout_width="47dp"
+            android:layout_height="53dp"
+            android:layout_gravity="left"
+            android:onClick="goBackMain"
+            android:src="@drawable/bailarinar" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="com.example.android.p2d.Perfil"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        android:id="@+id/tool_bar_sup"
+        layout="@layout/tool_bar_sup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/imgBtnEditar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></include>
+
+    <ImageButton
+        android:id="@+id/imgBtnEditar"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="417dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/tool_bar_sup"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar_sup"
+        app:srcCompat="@drawable/ic_editar"
+        android:scaleType="fitCenter"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar_sup"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/txtTituloPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Información Personal"
+            android:textColor="@color/textoInicio"
+            android:textSize="@dimen/texto_titulo"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llyDatosPefil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="356dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tool_bar_sup">
+
+            <ImageView
+                android:id="@+id/imgFotoPerfil"
+                android:layout_width="230dp"
+                android:layout_height="110dp"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Elba Surita"
+                    android:textColor="@color/textoInicio"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="correo@gmail.com"
+                    android:textColor="@color/textoInicio"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtCelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+569110232"
+                    android:textColor="@color/textoInicio"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=" Santiago, Chile"
+                    android:textColor="@color/textoInicio"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="701dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.729">
+
+        <LinearLayout
+            android:id="@+id/llyPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="535dp"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tool_barPref"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/txtTituloPreferencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="Tus Opciones"
+                android:textColor="@color/textoInicio"
+                android:textSize="@dimen/texto_titulo"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/llyDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llyEstilos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTituloEstilos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tipos de Baile"
+                        android:textColor="@color/textoInicio"
+                        android:textSize="@dimen/texto_titulo"
+                        android:textStyle="italic" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Hip-Hop"
+                                android:textColor="@color/textoInicio" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Bachata"
+                                android:textColor="@color/textoInicio" />
+
+                            <CheckBox
+                                style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Salsa"
+                                android:textColor="@color/textoInicio" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Dancehall"
+                                android:textColor="@color/textoInicio" />
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/llyTiposClases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txtTituloClases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tipos de Clases"
+                        android:textColor="@color/textoInicio"
+                        android:textSize="@dimen/texto_titulo"
+                        android:textStyle="italic" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Clase Privada"
+                                android:textColor="@color/textoInicio" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Clases de prueba asdasda"
+                                android:textColor="@color/textoInicio" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Clases Semanales"
+                                android:textColor="@color/textoInicio" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Clase Única"
+                                android:textColor="@color/textoInicio" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Coreográfico"
+                                android:textColor="@color/textoInicio" />
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">P2D</string>
+    <string name="menu_activity_1">My Class</string>
+    <string name="menu_activity_2">Search</string>
+    <string name="menu_activity_3">My Preferences</string>
+    <string name="menu_activity_4">Perfil</string>
+    <string name="menu_activity_5">Information</string>
+    <string name="titulo_info">About US</string>
+    <string name="des_info_1">Crete byr KcD Company</string>
+    <string name="des_info_2">All of Rigth Reserved</string>
+    <string name="info_fecha">28-11-2018</string>
+</resources>

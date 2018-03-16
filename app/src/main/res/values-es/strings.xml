@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">P2D</string>
+    <string name="menu_activity_1">Mis Clases</string>
+    <string name="menu_activity_2">Explorar</string>
+    <string name="menu_activity_3">Mis Preferencias</string>
+    <string name="menu_activity_4">Perfil</string>
+    <string name="menu_activity_5">Información</string>
+    <string name="titulo_info">Acerca de nosotros</string>
+    <string name="des_info_1">Creado por KcD Company</string>
+    <string name="des_info_2">Todos los derechos Resevados</string>
+    <string name="info_fecha">28-11-2018</string>
+
+</resources>

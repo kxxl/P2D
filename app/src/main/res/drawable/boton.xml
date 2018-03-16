@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid
+                android:color="#ff0000"/>
+            <corners android:radius="@dimen/radio_boton"/>
+
+        </shape>
+
+    </item>
+
+    <item android:state_enabled="false">
+        <shape>
+            <solid
+                android:color="#625f5f"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+
+    </item>
+
+
+    //estado reposo debe ir al final
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#000000"
+                android:endColor="#3e3737"
+                android:angle="270"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+
+
+    </item>
+
+</selector>
